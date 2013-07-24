@@ -1,9 +1,6 @@
 var express = require('express');
 var fs = require('fs');
-var input_buffer = fs.readFileSync('index.html', function(err, data){
-		if(err) throw err;
-		console.log(data);
-});
+var input_buffer = fs.readFileSync('index.html');
 
 var buf = new Buffer(256);
 var app = express();
