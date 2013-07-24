@@ -7,7 +7,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buf.toString("utf-8", 0, 30));
+  response.send(buf.toString("utf-8", 0, buf.length));
 });
 
 var port = process.env.PORT || 5000;
