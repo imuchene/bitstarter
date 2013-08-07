@@ -15,22 +15,22 @@
 		<style type="text/css">
 			/* Large desktop*/
 			@media (min-width: 980px)
-{
-	body
-{
-	padding-top: 60px;
-}
+			{
+				body
+				{
+					padding-top: 60px;
+				}
 
 
-.linediv-l
-{
-	border-right: 1px white solid;
-}
+				.linediv-l
+				{
+					border-right: 1px white solid;
+				}
 
-.linediv-r
-{
-	border-left: 1px white solid;
-}
+				.linediv-r
+				{
+					border-left: 1px white solid;
+				}
 
 
 }
@@ -42,36 +42,37 @@
 				 }
 			.heading, .subheading
 			{
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-	text-align: center;
-}
-			p.lead{
+				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+				text-align: center;
+			}
+			p.lead
+			{
 				padding-top: 1.5%;
-font-size: 24px;
-line-height: 30px;
-				}
-p
-{
-	font-size: 18px;
-	line-height: 24px;
-}
+				font-size: 24px;
+				line-height: 30px;
+			}
+			p
+			{
+				font-size: 18px;
+				line-height: 24px;
+			}
 
-/* Video pitch and Action */
-.pitch
-{
-	padding: 2.5% 0%;
-}
+			/* Video pitch and Action */
+			.pitch
+			{
+				padding: 2.5% 0%;
+			}
 
-.order
-{
-	padding: 2% 0%;
-}
+			.order
+			{
+				padding: 2% 0%;
+			}
 
-.actions 
-{
-	background-color: #343434;
-	padding: 3% 0%;
-}
+			.actions 
+			{
+				background-color: #343434;
+				padding: 3% 0%;
+			}
 
 
 			.video, .thermometer, .order, .social, .statistics{
@@ -81,34 +82,34 @@ p
 				color: white;
 				}
 
-/* Marketing copy and footer */
-.copy
-{
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
-	text-align: justify;
-}
+			/* Marketing copy and footer */
+			.copy
+			{
+				padding-top: 2.5%;
+				padding-bottom: 2.5%;
+				text-align: justify;
+			}
 
-.asset
-{
-	padding: 2.5% 0%;
-}
+			.asset
+			{
+				padding: 2.5% 0%;
+			}
 
-.footer
-{
-	color: #cccccc;
-	text-align: center;
-}
+			.footer
+			{
+				color: #cccccc;
+				text-align: center;
+			}
 
-.footer p
-{
-	font-size: 11px;
-}
+			.footer p
+			{
+				font-size: 11px;
+			}
 
-.footer a
-{
-	color: #ccccff;
-}
+			.footer a
+			{
+				color: #ccccff;
+			}
 
 
 			</style>
@@ -162,10 +163,46 @@ p
 	<img class="img-polaroid" src="http://placehold.it/480x300">
  </div>
 
-<div class="span6">
- <div class="thermometer">
-	Thermometer
+<!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+<div class="span5 actions">
+	<div class="span8 offset2">
+		<div class="statistics">
+			<div class="span4">
+				<!-- linediv-l and linediv-r give dividing lines that look different 
+				in horizontal and vertical layouts, illustrating media queries.-->
+	<div class="linediv-l">
+		<h3>1000</h3> <p>backers</p>
  </div>
+	</div>
+	<div  class="span4">
+		<div class="linediv-c">
+			<h3>$6000</h3><p>of $10,000</p>
+			</div>
+	</div>
+	
+	<div  class="span4">
+		<div class="linediv-r">
+			<h3>10</h3><p>days left</p>
+			</div>
+	</div>
+	
+	<div class="span10 offset1">
+		<!-- Bootstrap progress bar-->
+		<!-- http://twitter.github.io/bootstrap/components.html#progress -->
+		<div class="thermometer progress active">
+			<div class="bar bar-success" style="width: 60%;"></div>
+			<div class="bar bar-warning" style="width: 40%;"></div>
+	</div>
+	</div>
+	
+	<div class="span6 offset3 order">
+		<!-- Standard bootstrap button-->
+		<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+		<button class="btn btn-success btn-large">Preorder</button>
+	
+	</div>
+	
+	
 <div class="order">
 	Order
 </div>
